@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade de PDM I - Simples</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main class="main">
+        <div class="menu">
+            <h1>Lista de Exercício I</h1>
+            <h3>Revisão - Programação para Dispositivos Móveis 2</h3>
+        </div>
+        <div>
+            <p>(1) Escreva um programa que mostre na tela o nome da disciplina.</p>
+            <h2>Programação para Dispositivos Móveis - (PDM)</h2>
+        </div>
+        <div>
+            <p>(2) Desenvolva um programa que receba a leitura de dois números ponto
+                flutuante e informe a soma dos dois.</p>
+            <input type="number" class="input" id="input1A2">
+            <p style="font-size: 20px; display: inline;">+</p>
+            <input type="number" class="input" id="input2A2">
+            <button onclick="A2()">Somar</button>
+            <p id="resA2"></p>
+        </div>
+        <div>
+            <p>(3) Crie um código que seja capaz de ler 4 notas de um aluno e realizar a média
+                aritmética delas informando o status do aluno. (Obs.: Aprovado se média maior
+                que sete, caso contrário reprovado)</p>
+            <input type="number" id="nota1A3" min="0" max="10" placeholder="Nota 1">
+            <input type="number" id="nota2A3" min="0" max="10" placeholder="Nota 2">
+            <input type="number" id="nota3A3" min="0" max="10" placeholder="Nota 3">
+            <input type="number" id="nota4A3" min="0" max="10" placeholder="Nota 4">
+            <button onclick="A3()">Calcular Média</button>
+            <p id="resA3"></p>
+        </div>
+        <div>
+            <p>(5) Codifique um programa que dado um numeral inteiro ele informe a tabuada
+                do mesmo de zero a dez.</p>
+            
+            <input type="number" id="inputA5" placeholder="Insira um número">
+            <button onclick="A5()">Verificar Tabuada</button>
+            <p id="res0A5"></p>
+            <p id="res1A5"></p>
+            <p id="res2A5"></p>
+            <p id="res3A5"></p>
+            <p id="res4A5"></p>
+            <p id="res5A5"></p>
+            <p id="res6A5"></p>
+            <p id="res7A5"></p>
+            <p id="res8A5"></p>
+            <p id="res9A5"></p>
+            <p id="res10A5"></p>
+        </div>
+        <div>
+            <p>(6) Escreva um código que seja capaz de ler 3 valores positivos e informe o maior
+                valor dentre eles após o usuário entrar com o valor -1.</p>
+            <input type="number" id="inputA6" placeholder="Insira um número">
+            <button onclick="A6()">Adicionar</button>
+            <p id="resA6"></p>
+        </div>
+        <div>
+            <p>(7) Crie um algoritmo que receba um vetor de 10 posições com os valores 1, 2, 3,
+                4, 5, 6, 7, 8, 9 e 10 e imprima os valores ímpares.</p>
+            <br>
+            <p>Código realizado no JavaScript:</p>
+            <pre style="text-align: start;">
+        let listaA7 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+        let auxListaA7 = []
+        for (let i = 0; i <= 10; i+=2) {
+                auxListaA7.push(listaA7[i])
+                console.log(auxListaA7);
+        }
+        document.getElementById("resA7").textContent = auxListaA7
+            </pre>
+            <p>Resultado:</p>
+            <p id="resA7"></p>
+            <br>
+        </div>
+        <div>
+            <p>(8) Crie um programa que leia seu nome e o escreva de trás para frente.</p>
+            <input type="text" id="inputA8" placeholder="Nome">
+            <button onclick="A8()">Ler nome de trás para frente</button>
+            <p id="resA8"></p>
+        </div>
+        <div>
+            <p>(9) Desenvolva um programa use uma estrutura simbolizando um
+                funcionário(nome, idade, sexo, salário). Seu programa deve aceitar a leitura de
+                no mínimo 5 funcionários. No final deve imprimir todos os funcionários que
+                ganham mais do que um salário mínimo. </p>
+
+                <a href="ativ9.html">Ir para a atividade 9</a>
+        </div>
+        <div>
+            <p>(10) Crie um programa que utilize os conceitos de funções para simular as quatro
+                operações básicas da matemática(adição, subtração, multiplicação e divisão) cada
+                função deve retornar o resultado da operação.</p>
+
+                <a href="ativ10.html">Ir para a atividade 10</a>
+        </div>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>
