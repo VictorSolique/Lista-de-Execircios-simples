@@ -69,3 +69,32 @@ function A8() {
 
     document.getElementById("resA8").textContent = `${input} ao contrário é ${res}`
 }
+
+
+
+function A9() {
+    const input1 = document.getElementById("input1A9").value;
+    const input2 = document.getElementById("input2A9").value;
+    const input3 = document.getElementById("input3A9").value;
+    const input4 = document.getElementById("input4A9").value;
+
+    listaA6.push({nome: input1, idade: input2, sexo: input3, salario: input4})
+
+    document.getElementById("input1A9").value = "";
+    document.getElementById("input2A9").value = "";
+    document.getElementById("input3A9").value = "";
+    document.getElementById("input4A9").value = "";
+
+    let maior = listaA6.sort((a, b) => b.salario - a.salario, 0);
+
+    document.getElementById("resA9").textContent = `Maior Salário: ${JSON.stringify(maior[0].salario)}`;
+    
+    console.log(listaA6)
+
+}
+
+function A10() {
+    const conta = document.getElementById("conta").value;
+    document.getElementById("resA10").innerHTML = eval(conta);
+
+}
